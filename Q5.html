@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="Addproduct(event)">
+        <label>Name</label><br>
+        <input type="text" id="name"><br>
+        <label>Price</label><br>
+        <input type="number" id="price"><br>
+        <label>Category</label><br>
+        <input type="text" id="category"><br>
+        <br>
+        <input type="submit" >
+    </form>
+    <script>
+        function Addproduct(event){
+            event.preventDefault()
+            var name = document.getElementsById("name").value;
+            var price = document.getElementById("price").vaule;
+            var category = document.getElementById("category").value;
+            console.log(name,price,category)
+            var object={Name:name,Price:price,Category:category}
+            var array= [JSON.parse(document.getitem("users"))]
+        }
+    </script>
+</body>
+</html>
